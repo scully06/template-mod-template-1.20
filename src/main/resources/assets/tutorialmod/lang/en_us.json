@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.ruby":"Ruby",
 
-  "itemgroup.ruby": "Ruby Tutorial Group"
+  "itemgroup.ruby": "Ruby Tutorial Group",
+
+  "block.tutorialmod.ruby_block": "Block of Ruby"
 }

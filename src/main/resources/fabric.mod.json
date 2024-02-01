@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "first",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is a first developing mod of mine!",
+	"authors": [
+		"Haru!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/template-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.haru.first.TutorialMod"
+		],
+		"client": [
+			"com.haru.first.TutorialModClient"
+		],
+		"fabric-datagen":[
+			"com.haru.first.TutorialModDataGenerator"
+		]
+	},
+	"mixins": [
+		"template-mod.mixins.json",
+		{
+			"config": "template-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

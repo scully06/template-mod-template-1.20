@@ -13,14 +13,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
-
+    public static final Item RAW_RUBY = registerItem("raw_ruby",new Item(new FabricItemSettings()));
     public static final Item RUBY_SWORD = registerToolItem("ruby_sword",
             new SwordItem(PotatoToolMaterial.INSTANCE,
                     1000000000,
                     1000.0F,
                     new Item.Settings()));
 
-    //public static ToolItem RUBY_SWORD = new SwordItem(PotatoToolMaterial.INSTANCE,100,1000F,new Item.Settings());
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
     }

@@ -1,8 +1,10 @@
 {
   "item.tutorialmod.ruby":"Ruby",
+  "item.tutorialmod.raw_ruby": "Raw Ruby",
   "item.tutorialmod.ruby_sword": "Ruby Sword",
 
   "itemgroup.ruby": "Ruby Tutorial Group",
 
-  "block.tutorialmod.ruby_block": "Block of Ruby"
+  "block.tutorialmod.ruby_block": "Block of Ruby",
+  "block.tutorialmod.ruby_ore": "Ruby Ore"
 }

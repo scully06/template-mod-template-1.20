@@ -19,6 +19,7 @@ public class ModItemsGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.RUBY_SWORD);
+                        entries.add(ModItems.TOMATO);
 
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_ORE);

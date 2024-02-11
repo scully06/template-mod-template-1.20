@@ -29,7 +29,15 @@ public class ModItems {
             new SwordItem(PotatoToolMaterial.INSTANCE,
                     1000000000,
                     1000.0F,
-                    new Item.Settings()));
+                    new FabricItemSettings()));
+    public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe",
+            new PickaxeItem(ModToolMaterial.RUBY,1,1f,new FabricItemSettings()));
+    public static final Item RUBY_AXE = registerItem("ruby_axe",
+            new AxeItem(ModToolMaterial.RUBY,1,1f,new FabricItemSettings()));
+    public static final Item RUBY_HOE = registerItem("ruby_hoe",
+            new HoeItem(ModToolMaterial.RUBY,1,1f,new FabricItemSettings()));
+    public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
+            new ShovelItem(ModToolMaterial.RUBY,1,1f,new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);

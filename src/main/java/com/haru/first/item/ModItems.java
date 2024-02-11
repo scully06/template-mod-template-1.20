@@ -5,6 +5,7 @@ import com.haru.first.item.custom.MetalDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.impl.itemgroup.FabricItemGroup;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
@@ -21,6 +22,9 @@ public class ModItems {
 
     public static final Item TOMATO = registerItem("tomato",
             new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+
+    public static final Item COAL_BRIQUETTE = registerItem("coal_briquette",
+            new Item(new FabricItemSettings()));
     public static final Item RUBY_SWORD = registerToolItem("ruby_sword",
             new SwordItem(PotatoToolMaterial.INSTANCE,
                     1000000000,

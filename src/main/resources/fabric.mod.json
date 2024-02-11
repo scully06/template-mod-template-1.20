@@ -15,22 +15,18 @@
 	"icon": "assets/template-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen":[
+			"com.haru.first.TutorialModDataGenerator"
+		],
 		"main": [
 			"com.haru.first.TutorialMod"
 		],
 		"client": [
 			"com.haru.first.TutorialModClient"
-		],
-		"fabric-datagen":[
-			"com.haru.first.TutorialModDataGenerator"
 		]
 	},
 	"mixins": [
-		"template-mod.mixins.json",
-		{
-			"config": "template-mod.client.mixins.json",
-			"environment": "client"
-		}
+		"template-mod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.6",

@@ -1,4 +1,4 @@
-// 1.20	2024-02-12T12:06:43.7766333	Tutorial Mod/Model Definitions
+// 1.20	2024-02-12T15:39:14.4833307	Tutorial Mod/Model Definitions
 a6bcea2404322f59c9050612d5e7a6f93bfb4539 assets\tutorialmod\models\item\ruby_leggings_emerald_trim.json
 5907f70460d510f8bf01261b83779c0cffebdcb7 assets\tutorialmod\models\item\ruby_chestplate_iron_trim.json
 974c24639cc3704db5aa877fbbc45b6010001267 assets\tutorialmod\models\block\ruby_door_top_left.json
@@ -98,8 +98,8 @@ eaa086e1e5925260a7f03536f97f291f57135a23 assets\tutorialmod\models\item\ruby_wal
 430890fbcf2db7c6b7b703b18ca062d9b174ed64 assets\tutorialmod\models\item\coal_briquette.json
 ce40c7f2f6c974fee61e3a348d0ece934498eba6 assets\tutorialmod\models\block\ruby_fence_gate_open.json
 ab328a99e65fed08119dbb5356cd6c7edf239107 assets\tutorialmod\models\item\ruby_helmet_netherite_trim.json
-04c7c11c68d3ad251cad98c238b2c049eee90e0b assets\tutorialmod\models\item\ruby_stairs.json
 4f02d9627a0344b60c1f7b8496c960f55c36f020 assets\tutorialmod\models\block\ruby_fence_gate.json
+04c7c11c68d3ad251cad98c238b2c049eee90e0b assets\tutorialmod\models\item\ruby_stairs.json
 6e0c6b69a0d669e68369e8dca03a41dab0116274 assets\tutorialmod\models\item\ruby_chestplate_lapis_trim.json
 a8b0e15237f19e81c6da63b29b4f094fb26c8dc3 assets\tutorialmod\blockstates\ruby_button.json
 95368a1c8479c6c4e238f74e7e5d5a0c1f459ef6 assets\tutorialmod\models\item\ruby_leggings_netherite_trim.json

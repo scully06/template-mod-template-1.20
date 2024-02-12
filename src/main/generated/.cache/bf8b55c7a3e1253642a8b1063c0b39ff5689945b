@@ -1,4 +1,4 @@
-// 1.20	2024-02-12T09:38:02.6967088	Tutorial Mod/Model Definitions
+// 1.20	2024-02-12T12:06:43.7766333	Tutorial Mod/Model Definitions
 a6bcea2404322f59c9050612d5e7a6f93bfb4539 assets\tutorialmod\models\item\ruby_leggings_emerald_trim.json
 5907f70460d510f8bf01261b83779c0cffebdcb7 assets\tutorialmod\models\item\ruby_chestplate_iron_trim.json
 974c24639cc3704db5aa877fbbc45b6010001267 assets\tutorialmod\models\block\ruby_door_top_left.json
@@ -37,8 +37,8 @@ c0b0701701bb884e5b960972b7a75ff2a91f5632 assets\tutorialmod\models\item\ruby_leg
 74dd3aa76a0cede507cba07afd06770704b2f477 assets\tutorialmod\blockstates\ruby_pressure_plate.json
 5f64071542676a56091f2a24d8402a47d9df7279 assets\tutorialmod\models\item\ruby_leggings.json
 bcb7c716cde78b4346bfcf35fab40cba6a7b4f11 assets\tutorialmod\models\item\ruby_boots.json
-ab6d5bb86c6522fa3c42035f2a988d0cad069186 assets\tutorialmod\blockstates\ruby_door.json
 28926c3209b0de80a200bb5e076fa2f060c1dc50 assets\tutorialmod\models\item\ruby_trapdoor.json
+ab6d5bb86c6522fa3c42035f2a988d0cad069186 assets\tutorialmod\blockstates\ruby_door.json
 c814633148ab07a7934cdcd61f8a0792607a45b4 assets\tutorialmod\models\block\ruby_pressure_plate_down.json
 d1c7d3703f338d9fff435a03b7ed7cca39f1301a assets\tutorialmod\models\block\ruby_stairs.json
 eda40d759fe364655011dcece6a5e8d31d2360bb assets\tutorialmod\models\block\ruby_fence_gate_wall_open.json

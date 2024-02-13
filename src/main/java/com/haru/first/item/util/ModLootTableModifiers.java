@@ -4,12 +4,18 @@ import com.haru.first.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class ModLootTableModifiers {
@@ -19,6 +25,9 @@ public class ModLootTableModifiers {
             new Identifier("minecraft","entities/creeper");
     private static final Identifier SKELTON_ID =
             new Identifier("minecraft","entities/skeleton");
+
+    private static final Identifier SUSSAND_ID =
+            new Identifier("minecraft", "archaeology/desert_pyramid");
 
     public static void modifyLootTables(){
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -47,5 +56,17 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
         });
+
+        LootTableEvents.REPLACE.register(((resourceManager, lootManager, id, original, source) -> {
+            if (SUSSAND_ID.equals(id)) {
+                List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools[0].entries));
+                entries.add(ItemEntry.builder(ModItems.METAL_DETECTOR).build());
+                entries.add(ItemEntry.builder(ModItems.COAL_BRIQUETTE).build());
+
+                LootPool.Builder pool = LootPool.builder().with(entries);
+                return LootTable.builder().pool(pool).build();
+            }
+            return null;
+        }));
     }
 }

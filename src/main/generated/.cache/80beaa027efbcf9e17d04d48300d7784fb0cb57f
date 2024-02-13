@@ -1,8 +1,8 @@
-// 1.20	2024-02-12T15:39:14.4853161	Tutorial Mod/Tags for minecraft:block
+// 1.20	2024-02-13T10:27:49.2169692	Tutorial Mod/Tags for minecraft:block
 090afd1457b32fdd36d347afa6679cf48a814de9 data\minecraft\tags\blocks\needs_iron_tool.json
 f56dbdfaf03ddb45db5e8ba319632b4cae22e37b data\minecraft\tags\blocks\doors.json
-78531fcab6d476b654d5550339d0c7bcf2def44b data\minecraft\tags\blocks\trapdoors.json
 e2286c628c5df58f5d70daf3eb48393e84904404 data\fabric\tags\blocks\need_tool_level_4.json
+78531fcab6d476b654d5550339d0c7bcf2def44b data\minecraft\tags\blocks\trapdoors.json
 d06c454f70dfdec7dd9024b99473238f22622869 data\minecraft\tags\blocks\mineable\pickaxe.json
 49b42ae331403235f204d555976566420ce570d1 data\minecraft\tags\blocks\slabs.json
 851735374545b46a3181402da31f82caef3a19c3 data\minecraft\tags\blocks\pressure_plates.json

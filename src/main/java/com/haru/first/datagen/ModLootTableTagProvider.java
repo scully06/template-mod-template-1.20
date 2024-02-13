@@ -1,6 +1,7 @@
 package com.haru.first.datagen;
 
 import com.haru.first.block.ModBlocks;
+import com.haru.first.block.custom.TomatoCropBlock;
 import com.haru.first.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -13,12 +14,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 import javax.swing.text.AbstractDocument;
 
@@ -42,7 +45,11 @@ public class ModLootTableTagProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrop(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
 
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(
+                ModBlocks.TOMATO_CROPS).properties(StatePredicate.Builder.create()
+                .exactMatch(TomatoCropBlock.AGE,5));
 
+        addDrop(ModBlocks.TOMATO_CROPS,cropDrops(ModBlocks.TOMATO_CROPS, ModItems.TOMATO,ModItems.TOMATO_SEED,builder));
     }
     public LootTable.Builder copperLikeOreDrop(Block drop, Item item){
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,

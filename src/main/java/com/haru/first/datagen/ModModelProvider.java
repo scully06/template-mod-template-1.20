@@ -1,6 +1,7 @@
 package com.haru.first.datagen;
 
 import com.haru.first.block.ModBlocks;
+import com.haru.first.block.custom.TomatoCropBlock;
 import com.haru.first.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -28,6 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         rubyPool.wall(ModBlocks.RUBY_WALL);
 
         blockStateModelGenerator.registerDoor(ModBlocks.RUBY_DOOR);
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROPS, TomatoCropBlock.AGE,0,1,2,3,4,5);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAP_DOOR);
     }
         public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -44,6 +46,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_LEGGIGNGS);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_BOOTS);
-
+        itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
     }
 }

@@ -1,6 +1,7 @@
 package com.haru.first.item;
 
 import com.haru.first.TutorialMod;
+import com.haru.first.block.ModBlocks;
 import com.haru.first.item.custom.MetalDetectorItem;
 import com.haru.first.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -44,7 +45,8 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.RUBY,ArmorItem.Type.LEGGINGS,new FabricItemSettings()));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(ModArmorMaterials.RUBY,ArmorItem.Type.BOOTS,new FabricItemSettings()));
-
+    public static final Item TOMATO_SEED = registerItem("tomato_seed",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROPS,new FabricItemSettings()));
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
     }

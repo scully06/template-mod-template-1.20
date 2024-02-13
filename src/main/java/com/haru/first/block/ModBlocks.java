@@ -1,6 +1,7 @@
 package com.haru.first.block;
 
 import com.haru.first.TutorialMod;
+import com.haru.first.block.custom.TomatoCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -26,6 +27,8 @@ public class ModBlocks {
     public static final Block RUBY_SLAB = registerBlock("ruby_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+    public static final Block TOMATO_CROPS = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"tomato_crop"),
+            new TomatoCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     public static final Block RUBY_BUTTON = registerBlock("ruby_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK),BlockSetType.IRON,20,true));
     public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",

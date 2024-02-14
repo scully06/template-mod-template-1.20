@@ -46,6 +46,7 @@ public class ModLootTableTagProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_TRAP_DOOR);
         addDrop(ModBlocks.DAHLIA);
         addDrop(ModBlocks.POTTED_DAHLIA);
+        addDrop(ModBlocks.SOUND_BLOCK);
 
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrop(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
 

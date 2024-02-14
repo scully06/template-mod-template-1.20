@@ -3,6 +3,7 @@ package com.haru.first;
 import com.haru.first.block.ModBlocks;
 import com.haru.first.item.ModItems;
 import com.haru.first.item.ModItemsGroups;
+import com.haru.first.item.util.ModCustomTrades;
 import com.haru.first.item.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,6 +19,7 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItemsGroups.registerItemGroups();
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
 
 
 		ModItems.registerModItems();

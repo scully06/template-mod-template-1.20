@@ -30,6 +30,8 @@ public class ModItemsGroups {
                         entries.add(ModItems.RUBY_LEGGIGNGS);
                         entries.add(ModItems.RUBY_BOOTS);
                         entries.add(ModItems.TOMATO_SEED);
+                        entries.add(ModItems.CORN_SEED);
+                        entries.add(ModItems.CORN);
 
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);

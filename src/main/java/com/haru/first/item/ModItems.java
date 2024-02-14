@@ -47,6 +47,10 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.RUBY,ArmorItem.Type.BOOTS,new FabricItemSettings()));
     public static final Item TOMATO_SEED = registerItem("tomato_seed",
             new AliasedBlockItem(ModBlocks.TOMATO_CROPS,new FabricItemSettings()));
+    public static final Item CORN_SEED = registerItem("corn_seed",
+            new AliasedBlockItem(ModBlocks.CORN_CROPS,new FabricItemSettings()));
+    public static final Item CORN = registerItem("corn",
+            new AliasedBlockItem(ModBlocks.CORN_CROPS,new FabricItemSettings()));
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
     }

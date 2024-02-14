@@ -1,12 +1,14 @@
 package com.haru.first.datagen;
 
 import com.haru.first.block.ModBlocks;
+import com.haru.first.block.custom.CornCropBrock;
 import com.haru.first.block.custom.TomatoCropBlock;
 import com.haru.first.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 
@@ -27,9 +29,10 @@ public class ModModelProvider extends FabricModelProvider {
         rubyPool.fence(ModBlocks.RUBY_FENCE);
         rubyPool.fenceGate(ModBlocks.RUBY_FENCE_GATE);
         rubyPool.wall(ModBlocks.RUBY_WALL);
-
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DAHLIA,ModBlocks.POTTED_DAHLIA, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerDoor(ModBlocks.RUBY_DOOR);
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROPS, TomatoCropBlock.AGE,0,1,2,3,4,5);
+        blockStateModelGenerator.registerCrop(ModBlocks.CORN_CROPS, CornCropBrock.AGE,0,1,2,3,4,5,6,7,8);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAP_DOOR);
     }
         public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -42,6 +45,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_SHOVEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_SWORD, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CORN_SEED, Models.GENERATED);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_HELMET);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_LEGGIGNGS);

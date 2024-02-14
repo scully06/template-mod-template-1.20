@@ -16,6 +16,8 @@
   "item.tutorialmod.tomato_seed": "Tomato Seed",
   "item.tutorialmod.corn": "Corn",
   "item.tutorialmod.corn_seed": "Corn Seed",
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music disc",
+  "item.tutorialmod.bar_brawl_music_disc_desc": "Bryan Tech - Bar Brawl(CC0)",
 
   "itemgroup.ruby": "Ruby Tutorial Group",
 
@@ -31,5 +33,8 @@
   "block.tutorialmod.ruby_fence_gate": "Ruby FenceGate",
   "block.tutorialmod.ruby_wall": "Ruby Wall",
   "block.tutorialmod.ruby_door": "Ruby Door",
-  "block.tutorialmod.ruby_trapdoor": "Ruby TrapDoor"
+  "block.tutorialmod.ruby_trapdoor": "Ruby TrapDoor",
+
+  "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
+
 }

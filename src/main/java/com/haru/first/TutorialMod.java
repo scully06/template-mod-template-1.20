@@ -5,6 +5,7 @@ import com.haru.first.item.ModItems;
 import com.haru.first.item.ModItemsGroups;
 import com.haru.first.item.util.ModCustomTrades;
 import com.haru.first.item.util.ModLootTableModifiers;
+import com.haru.first.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -20,6 +21,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemsGroups.registerItemGroups();
 		ModLootTableModifiers.modifyLootTables();
 		ModCustomTrades.registerCustomTrades();
+		ModSounds.registerSounds();
 
 
 		ModItems.registerModItems();

@@ -32,6 +32,7 @@ public class ModItemsGroups {
                         entries.add(ModItems.TOMATO_SEED);
                         entries.add(ModItems.CORN_SEED);
                         entries.add(ModItems.CORN);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
 
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_SLAB);

@@ -46,7 +46,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_SHOVEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY_SWORD, Models.GENERATED);
-
+        itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC,Models.GENERATED);
         itemModelGenerator.register(ModItems.CORN_SEED, Models.GENERATED);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_HELMET);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_CHESTPLATE);

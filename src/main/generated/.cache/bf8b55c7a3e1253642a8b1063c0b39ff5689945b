@@ -1,4 +1,4 @@
-// 1.20	2024-02-14T15:13:48.8529513	Tutorial Mod/Model Definitions
+// 1.20	2024-02-15T08:47:57.0242875	Tutorial Mod/Model Definitions
 a6bcea2404322f59c9050612d5e7a6f93bfb4539 assets\tutorialmod\models\item\ruby_leggings_emerald_trim.json
 5907f70460d510f8bf01261b83779c0cffebdcb7 assets\tutorialmod\models\item\ruby_chestplate_iron_trim.json
 974c24639cc3704db5aa877fbbc45b6010001267 assets\tutorialmod\models\block\ruby_door_top_left.json
@@ -17,8 +17,8 @@ d2ea57718b2b1d4bafd79cc6c71c483bab5528d7 assets\tutorialmod\blockstates\ruby_blo
 bbc3dac1be81c3f6cf8c7c0d1cfa5c892b7e92a8 assets\tutorialmod\models\item\ruby_chestplate_gold_trim.json
 6126e26da373f9113d9e9be875b14a0d13857444 assets\tutorialmod\models\item\corn.json
 4a19a801e98fb8e89f84c029ba6b1121d2fd2145 assets\tutorialmod\models\block\ruby_fence_inventory.json
-2f7aa7c65ec46676e3fa73faa9031b0ff0fd7d5b assets\tutorialmod\models\block\ruby_fence_side.json
 df370c12890d5f02c79457703cf230a424af2a39 assets\tutorialmod\models\item\tomato_seed.json
+2f7aa7c65ec46676e3fa73faa9031b0ff0fd7d5b assets\tutorialmod\models\block\ruby_fence_side.json
 a2d5983cad7a3013cfed63e65fba36ce76160c3e assets\tutorialmod\models\block\ruby_button.json
 64a10961286e5580fc005404c650f326fd5b061d assets\tutorialmod\blockstates\dahlia.json
 a743381d7382b871f961ede3637b21dd7322ef0d assets\tutorialmod\models\item\tomato.json
@@ -101,6 +101,7 @@ eb0e2f742495497dcd0372580fcae2e18a35c4c7 assets\tutorialmod\models\item\corn_see
 dd8175fa12280ab5f11423a30ce62f43befa9a1d assets\tutorialmod\models\item\raw_ruby.json
 d265fc031081fa3e6544db97d53afd58d746ef33 assets\tutorialmod\models\block\ruby_block.json
 efc696a9a672cee77981cd6c96e8ac8cbade718e assets\tutorialmod\models\item\ruby_chestplate_copper_trim.json
+f746b64540daf2ab6302b3ec01a78490c48fc10b assets\tutorialmod\models\item\bar_brawl_music_disc.json
 adc34350b7efaf373e4975c3758e7b880ede78cd assets\tutorialmod\models\item\ruby_slab.json
 7a557c639adfac24ab0108d473b960f7fa710dcb assets\tutorialmod\models\item\ruby_chestplate_netherite_trim.json
 28147eb81a8c0b3dc2ea19cb370176b5115181b9 assets\tutorialmod\models\item\ruby_boots_emerald_trim.json

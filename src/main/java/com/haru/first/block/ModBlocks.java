@@ -4,6 +4,7 @@ import com.haru.first.TutorialMod;
 import com.haru.first.block.custom.CornCropBrock;
 import com.haru.first.block.custom.TomatoCropBlock;
 import com.haru.first.item.custom.SoundBlock;
+import com.haru.first.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -55,7 +56,7 @@ public class ModBlocks {
     public static final Block POTTED_DAHLIA = Registry.register(Registries.BLOCK,new Identifier(TutorialMod.MOD_ID,"potted_dahlia"),
             new FlowerPotBlock(DAHLIA,FabricBlockSettings.copyOf(Blocks.POTTED_POPPY).nonOpaque()));
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(ModSounds.SOUND_BLOCK_SOUNDS)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);

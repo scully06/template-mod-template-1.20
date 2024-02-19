@@ -38,7 +38,7 @@
   "bar_brawl": {
     "sounds": [
       {
-      "name" : "tutorialmod:bar_brawl",
+        "name": "tutorialmod:bar_brawl",
         "stream": true
       }
     ]

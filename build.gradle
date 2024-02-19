@@ -27,18 +27,10 @@ repositories {
 }
 
 loom {
-	splitEnvironmentSourceSets()
-
-	mods {
-		"template-mod" {
-			sourceSet sourceSets.main
-			sourceSet sourceSets.client
-		}
-	}
 	runs {
 		// This adds a new gradle task that runs the datagen API: "gradlew runDatagen"
 		datagen {
-			inherit client
+			inherit server
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
@@ -88,7 +80,7 @@ java {
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.base.archivesName.get()}"}
+		rename { "${it}_${project.archivesBaseName}"}
 	}
 }
 

@@ -11,6 +11,9 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -53,5 +56,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_LEGGIGNGS);
         itemModelGenerator.registerArmor((ArmorItem)ModItems.RUBY_BOOTS);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
+
+            itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
+                    new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

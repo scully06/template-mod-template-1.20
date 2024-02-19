@@ -4,13 +4,12 @@ import com.haru.first.block.ModBlocks;
 import com.haru.first.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 
 import java.util.List;
-import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> RUBY_SMELTABLES = List.of(ModItems.RAW_RUBY, ModBlocks.RUBY_ORE);
@@ -18,8 +17,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         super(output);
     }
 
+
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
         offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC,ModItems.RUBY,
                 0.7f, 200,"ruby");
         offerBlasting(exporter,RUBY_SMELTABLES,RecipeCategory.MISC,ModItems.RUBY,
